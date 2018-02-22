@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVA hahaha</title>
+</head>
+<body>
+	<h1 id="pealkiri"></h1>
+	<input type="text" id="tekst">
+	<button id="nupp">vajuta siia</button>
+	
+	<button id="nupp2">siia ei tohi vajutada</button>
+	<script>
+		console.log("tere");
+		alert("tere");
+
+		var tekstiKast = document.getElementById("tekst");
+		var nupp = document.getElementById("nupp");
+
+		
+
+		nupp.addEventListener("click", function(e){
+			console.log(e);
+			alert(tekstiKast.value);
+		});
+		nupp2.addEventListener("click", function(e){
+			console.log(e);
+			alert("miks sa siia vajutasid, ei tohtinud ju");
+		});
+
+		var fn = function(tekst) {
+				console.log(tekst);
+
+		}
+
+
+		var arv1 = 5;
+
+		var massiiv1 = new Array();
+		var massiiv2 = [1,2,3,4,5,7];
+		//console.log(massiiv2[1]); sellega saab ukshaaval asju k;tte
+
+		for(var i = 0; i < massiiv2.length; i++) {
+			console.log(massiiv2[i]);
+
+		}
+
+// uhe reaaline kommenteer --------
+
+/* ctrl shift / need kolm korraga tekitavad selle kommneti 
+kui hoiad Ctrl lalla saab panna mittu kursorit :)
+kui hoiad Ctrl lalla saab panna mittu kursorit :)
+kui hoiad Ctrl lalla saab panna mittu kursorit :)
+ */
+
+ 		document.getElementById("pealkiri").innerHTML = document.title;
+
+
+	</script>
+</body>
+</html>
